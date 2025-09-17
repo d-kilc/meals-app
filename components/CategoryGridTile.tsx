@@ -18,7 +18,6 @@ const CategoryGridTile: FC<CategoryGridTileProps> = ({
       <Pressable
         onPress={onPress}
         android_ripple={{color: "#ccc"}}
-        // style={styles.button}
         style={({pressed}) => [styles.button, pressed ? styles.buttonPressed : null]}
       >
         <View style={[styles.containerInner, { backgroundColor: color }]}>
