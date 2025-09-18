@@ -17,9 +17,10 @@ const Categories: FC<CategoriesProps> = ({ navigation }) => {
       <CategoryGridTile
         title={itemData.item.title}
         color={itemData.item.color}
-        onPress={() => navigation.navigate("MealsOverview", {
-          categoryId: itemData.item.id
-        })}
+        onPress={() => navigation.navigate(
+          "MealsOverview",
+          { categoryId: itemData.item.id }
+        )}
       />
     )
   }
